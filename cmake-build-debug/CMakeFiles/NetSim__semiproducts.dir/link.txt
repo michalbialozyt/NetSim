@@ -1,0 +1,3 @@
+"C:\PSiO\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\NetSim__semiproducts.dir/objects.a
+C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\ar.exe cr CMakeFiles\NetSim__semiproducts.dir/objects.a @CMakeFiles\NetSim__semiproducts.dir\objects1.rsp
+C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE -g   -Wl,--whole-archive CMakeFiles\NetSim__semiproducts.dir/objects.a -Wl,--no-whole-archive  -o NetSim__semiproducts.exe -Wl,--out-implib,libNetSim__semiproducts.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\NetSim__semiproducts.dir\linklibs.rsp

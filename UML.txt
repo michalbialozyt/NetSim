@@ -1,0 +1,55 @@
+@startuml
+interface IPackageQueue <<interface>> {
+
++ {abstract} pop():Package
++ {abstract} get_queue_type():PackageQueueType {query}
+}
+
+interface IPackageStockpile <<interface>> {
+
++ {abstract} push(Package&&):void
++ {abstract} empty():bool {query}
++ {abstract} size():size_type {query}
++ /iteratory/
++ {abstract} ~IPackageStockpile()
+}
+
+
+enum PackageQueueType <<enumeration>> {
+
+FIFO
+LIFO
+}
+
+class PackageQueue{
+
+- queue_: list<Package>
+- queue_type_: PackageQueueType
+
++ PackageQueue(PackageQueueType)
+}
+
+class Package{
+
+- elementID_: ElementID
+- {static} assignedIDs_: set<ElementID>
+- {static} freedIDs_: set<ElementID>
+
++ Package()
++ Package(ElementID)
++ Package(Package&&)
++ operator=(Package&&):Package&
++ get_id(): ElementID {query}
++ ~Package()
+}
+
+class ELementID << (T, orchid) primitive>>{
+
+ElementID: int
+}
+
+IPackageQueue ..> PackageQueueType : << uses >>
+IPackageQueue --|> IPackageStockpile
+PackageQueue ..|> IPackageQueue
+Package --* PackageQueue
+@enduml

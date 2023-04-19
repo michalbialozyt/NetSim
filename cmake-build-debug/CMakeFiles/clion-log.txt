@@ -1,0 +1,4 @@
+"C:\PSiO\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" "C:\Users\piotr\Desktop\AGH\SEMESTR 3\Zaawansowane Programowanie Obiektowe\Symulacja_sieci_ZPO\symulacje_sieci_1a"
+-- Configuring done
+-- Generating done
+-- Build files have been written to: C:/Users/piotr/Desktop/AGH/SEMESTR 3/Zaawansowane Programowanie Obiektowe/Symulacja_sieci_ZPO/symulacje_sieci_1a/cmake-build-debug
